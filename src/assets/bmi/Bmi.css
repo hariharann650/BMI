@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Prociono&display=swap');
+*{
+  font-family: "Noto Serif", serif;
+}
+
+body{
+  padding:0px;
+  margin:0px;
+  /* background-color: greenyellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg');
+  background-repeat: no-repeat;
+  background-position:center;
+  object-fit:cover;
+}
+.main-div{
+  display: flex;
+  width:60vw;
+  height:auto;
+}
+.box{
+  width:50%;
+  background-color: hsl(0, 0%, 100%);
+}
+img{
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+.sub-div{
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  width:50%;
+  padding:20px;
+}
+h1{
+  text-align: center;
+  color:#3498db;
+}
+label{
+  font-size: 16px;
+  color:#666;
+}
+input{
+  height:25px;
+  margin:10px 0px;
+  outline: none;
+}
+.buttons{
+  display: flex;
+}
+.bmi-button,
+.clear-button{
+  background-color: #2980b9;
+  padding:5px 10px;
+  color:#fff;
+  font-size: 14px;
+  border:none;
+  border-radius: 4px;
+  margin:10px 10px 0px 0px;
+}
+.clear-button{
+  background-color: hsla(0, 100%, 55%, 0.931);
+}
+button:hover{
+  opacity:0.6;
+}
+.data{
+  border:1px solid #2980b9;
+  margin-top:10px;
+  padding:5px;
+}
+.bmidata{
+  color:#2980b9;
+  font-size: 18px;
+}
+.bmistatus{
+  color:#333;
+  font-weight: 500;
+  font-size: 17px;
+}
+.bmistatus span{
+  font-weight: 500;
+  font-size: 18px;
+}
+.error{
+  color:red;
+  font-size: 14px;
+}
+@media screen and (max-width:600px){
+  .main-div{
+    display: flex;
+    width:90vw;
+    height:auto;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  img{
+    width:90vw;
+    height:100%;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-position: center;
+  } 
+  .box{
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .sub-div{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    padding:20px;
+  }
+}
